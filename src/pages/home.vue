@@ -17,6 +17,7 @@ section
 				select.realName(v-model="item.realName")
 					option(v-for="name in memberList" v-bind:value="name") {{ name }}
 	button(@click="check()") 送出
+	.result {{ orderResult }}
 </template>
 
 <script setup>
@@ -25,6 +26,7 @@ import axios from 'axios'
 // const { member } = inject('datas')
 
 const orderId = ref('')
+const orderResult = ref('')
 const memberList = [
 	'Ariel',
 	'Cami',
@@ -68,7 +70,9 @@ const check = async () => {
 		})
 	})
 
-	await axios.post('https://hook.eu2.make.com/u2ytd6538n660g2psqg3dcreyygqnu7o', result)
+	await axios
+		.post('https://hook.eu2.make.com/u2ytd6538n660g2psqg3dcreyygqnu7o', result)
+		.then((res) => (orderResult.value = 'Result: ' + res.data))
 }
 
 const order = reactive({})
@@ -133,5 +137,8 @@ button {
 	&:active {
 		background-color: #e48749;
 	}
+}
+.result {
+	padding: 10px 5px;
 }
 </style>
