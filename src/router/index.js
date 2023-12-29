@@ -1,7 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-// import ContentPage from "@/components/templates/ContentPage.vue"
-
 export const router = createRouter({
 	history: createWebHistory(import.meta.env.VITE_PROJECT_NAME),
 	routes: [
@@ -10,17 +8,11 @@ export const router = createRouter({
 			name: 'home',
 			component: () => import('@/pages/home.vue')
 		},
-		// {
-		// 	path: "/profile",
-		// 	component: ContentPage,
-		// 	children: [
-		// 		{
-		// 			path: "",
-		// 			name: "profile",
-		// 			component: () => import("@/pages/profile.vue"),
-		// 		},
-		// 	],
-		// },
+		{
+			path: '/link',
+			name: 'link',
+			component: () => import('@/pages/link.vue')
+		},
 		{
 			// 錯誤路徑
 			path: '/:pathMatch(.*)*',
