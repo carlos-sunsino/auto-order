@@ -9,11 +9,6 @@ export const router = createRouter({
 			component: () => import('@/pages/home.vue')
 		},
 		{
-			path: '/link',
-			name: 'link',
-			component: () => import('@/pages/link.vue')
-		},
-		{
 			// 錯誤路徑
 			path: '/:pathMatch(.*)*',
 			name: 'not-found',
