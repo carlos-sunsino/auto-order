@@ -29,6 +29,7 @@ const orderId = ref('')
 const orderResult = ref('')
 const memberList = [
 	'Ariel',
+	'Akai',
 	'Cami',
 	'Carlos',
 	'Carol',
