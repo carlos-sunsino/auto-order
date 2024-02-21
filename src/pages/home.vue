@@ -52,6 +52,7 @@ const memberList = [
 	'Lily',
 	'Seta',
 	'Claire',
+	'Zoe',
 	'Zona'
 ]
 
