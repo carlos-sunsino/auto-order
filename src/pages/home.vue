@@ -115,8 +115,6 @@ section {
 }
 .loadOrder {
 	margin-bottom: 20px;
-	input {
-	}
 }
 table {
 	margin-bottom: 5px;
