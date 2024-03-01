@@ -46,6 +46,7 @@ const memberList = [
 	'Yvonne',
 	'Ziv',
 	'Elena',
+	'Eric',
 	'Ivy',
 	'Johnson',
 	'Joyce',
