@@ -47,6 +47,7 @@ const memberList = [
 	'Kevin',
 	'Mara',
 	'Rayz',
+	'Sandy',
 	'Seta',
 	'Steven',
 	'William',
